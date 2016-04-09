@@ -1,0 +1,36 @@
+/*Global styles*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Base styles*/
+h1{
+    font-size: 175%;
+}
+
+h2{
+    font-size: 125%;
+}
+
+p#title::after {
+    font-weight: bold;
+}
+
+/*Specific device styles*/
+@media (min-width: 992px) {
+    p#title::after {
+        content: "desktop";
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    p#title::after {
+        content: "tablet";
+    }
+}
+
+@media (max-width: 767px) {
+    p#title::after {
+        content: "phone";
+    }
+}
