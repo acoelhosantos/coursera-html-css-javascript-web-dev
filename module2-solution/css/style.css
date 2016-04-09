@@ -7,13 +7,18 @@
 }
 
 /*Base styles*/
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 h1 {
     font-size: 175%;
 }
 
 h1#main-title {
     text-align: center;
-    margin: 15px;
+    margin: 45px 15px 0px 15px;
 }
 
 h2 {
@@ -22,45 +27,43 @@ h2 {
 
 h2.menu-item-title {
     float: right;
-    width: 30%;
     border-bottom: 2px solid #000000;
     border-left: 2px solid #000000;
     margin-bottom: 5px;
-    margin-left: 5px;
+    margin-left: 20px;
+    padding: 5px 15px 5px 15px;
     text-align: center;
 }
 
-h2#chicken{
+h2#chicken {
     background-color: pink;
 }
 
-h2#beef{
+h2#beef {
     background-color: red;
     color: white;
 }
 
-h2#sushi{
+h2#sushi {
     background-color: yellow;
 }
 
-div.menu-list{
+div.menu-list {
+    width: 100%;
+    display: inline-block;
     text-align: center;
+    overflow: auto;
+    padding: 10px 50px 10px 50px;
 }
 
 section.menu-item {
-    display: inline-block;
     height: 100%;
-    overflow: auto;
-    border: 2px solid #000000;
-    margin: 5px;
+    vertical-align: top;
     background-color: #CCCCCC;
+    border: 2px solid #000000;
 }
 
-p#title::after {
-    font-weight: bold;
-}
-
-p.menu-item-description{
+p.menu-item-description {
     padding: 15px;
     text-align: justify;
 }
@@ -68,19 +71,34 @@ p.menu-item-description{
 /*Specific device styles*/
 @media (min-width: 992px) {
     section.menu-item {
+        display: inline-block;
         width: 30%;
+        margin: 20px 10px 20px 10px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     section.menu-item {
-        width: 50%;
+        float: left;
+        width: 49%;
+        margin: 20px 0px 20px 0px;
+    }
+
+    section.menu-item:nth-child(2) {
+        float: right;
+        width: 49%;
+        margin: 20px 0px 20px 0px;
     }
 
     section.menu-item:last-child {
         width: 100%;
+        margin: 0px 0px 20px 0px;
     }
 }
 
 @media (max-width: 767px) {
+    section.menu-item {
+        width: 100%;
+        margin: 20px 0px 20px 0px;
+    }
 }
