@@ -1,36 +1,86 @@
 /*Global styles*/
 * {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 /*Base styles*/
-h1{
+h1 {
     font-size: 175%;
 }
 
-h2{
+h1#main-title {
+    text-align: center;
+    margin: 15px;
+}
+
+h2 {
     font-size: 125%;
+}
+
+h2.menu-item-title {
+    float: right;
+    width: 30%;
+    border-bottom: 2px solid #000000;
+    border-left: 2px solid #000000;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+h2#chicken{
+    background-color: pink;
+}
+
+h2#beef{
+    background-color: red;
+    color: white;
+}
+
+h2#sushi{
+    background-color: yellow;
+}
+
+div.menu-list{
+    text-align: center;
+}
+
+section.menu-item {
+    display: inline-block;
+    height: 100%;
+    overflow: auto;
+    border: 2px solid #000000;
+    margin: 5px;
+    background-color: #CCCCCC;
 }
 
 p#title::after {
     font-weight: bold;
 }
 
+p.menu-item-description{
+    padding: 15px;
+    text-align: justify;
+}
+
 /*Specific device styles*/
 @media (min-width: 992px) {
-    p#title::after {
-        content: "desktop";
+    section.menu-item {
+        width: 30%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    p#title::after {
-        content: "tablet";
+    section.menu-item {
+        width: 50%;
+    }
+
+    section.menu-item:last-child {
+        width: 100%;
     }
 }
 
 @media (max-width: 767px) {
-    p#title::after {
-        content: "phone";
-    }
 }
