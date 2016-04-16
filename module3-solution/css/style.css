@@ -12,18 +12,30 @@ body {
 
 .navbar-custom {
     background-color: #afed97;
-    border: 0px;
-    border-color: #08440e;
+    border: 0px #08440e;
 }
 
 .navbar-brand {
     height: 70px;
 }
 
-button.navbar-toggle {
+#main-button {
     margin-top: 18px;
     margin-bottom: 18px;
-    border-color: #08440e;
+    border-color: #cdd43e;
+    background-color: #d4eda2;
+}
+
+#main-button:hover {
+    background-color: #daed81;
+}
+
+#main-button > .icon-bar {
+    background-color: #cdd43e;
+}
+
+#bs-example-navbar-collapse-1 {
+    border-color: #cdd43e;
 }
 
 h1.title {
@@ -48,5 +60,22 @@ div.main-content {
 }
 
 .mobile-menu {
-    /*background-color: #8c8c8c;*/
+    background-color: #d4eda2;
+    padding: 0px;
+}
+
+.mobile-menu > ul {
+    margin: 0px;
+}
+
+.navbar-default .mobile-menu .navbar-nav > li {
+    border-bottom: 1px solid #cdd43e;
+}
+
+.navbar-default .mobile-menu .navbar-nav > li > a {
+    color: #8f942b;
+}
+
+.navbar-default .mobile-menu .navbar-nav > li > a:hover {
+    color: #6d7121;
 }
