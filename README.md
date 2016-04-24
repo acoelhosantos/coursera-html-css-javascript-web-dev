@@ -7,3 +7,6 @@ Coursera course "HTML, CSS, and Javascript for Web Developers" by Johns Hopkins 
 
 > **Module 3 solution:**
 > http://acoelhosantos.github.io/coursera-html-css-javascript-web-dev/module3-solution/
+
+> **Module 4 solution:**
+> http://acoelhosantos.github.io/coursera-html-css-javascript-web-dev/module4-solution/
